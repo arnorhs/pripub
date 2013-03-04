@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    header
+        .width_wrapper
+            ul
+                li
+                    a(href="#") &lArr; Dashboard
+                li
+                    a(href="#") View blog
+    .width_wrapper
+        .main_controls
+            ul
+                li
+                    button Preview on blog
+                li
+                    button Save draft
+                li
+                    button Publish
+        .content_area
+            .title_wrapper
+                input(type="text", placeholder="Blog post title...")
+            .text_wrapper
+                textarea(placeholder="Start writing...")
+            .add_photo
+                button &plus; Add photo
