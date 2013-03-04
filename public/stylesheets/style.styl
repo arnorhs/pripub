@@ -1,10 +1,9 @@
 @import reset
 
 body
-    background: #eee
+    background: #eee url(../images/gray_jean.png) repeat
     font-size: 16px
     font-family: sans-serif
-
 a
     text-decoration: none
 button
@@ -12,19 +11,24 @@ button
     margin: 0
 input, textarea
     margin: 0
+
+
 .width_wrapper
     width: 100%
     max-width: 900px
     margin: 0 auto
+
+header_border_light=#f8f8f8
+header_border_dark=#e0e0e0
 header
-    border-bottom: 1px solid #ddd
-    box-shadow: 0px 1px 0px #f8f8f8
+    border-bottom: 1px solid header_border_dark
+    box-shadow: 0px 1px 0px header_border_light
     height: 35px
     ul
         width: auto
         float: left
-        border-left: 1px solid #ddd
-        border-right: 1px solid #f8f8f8
+        border-left: 1px solid header_border_dark
+        border-right: 1px solid header_border_light
         li
             display: block
             float: left
@@ -33,14 +37,14 @@ header
                 display: block
                 line-height: 30px
                 padding: 5px 15px 0 15px
-                border-left: 1px solid #f8f8f8
-                border-right: 1px solid #ddd
-                color: #ccc
+                border-left: 1px solid header_border_light
+                border-right: 1px solid header_border_dark
+                color: #bbb
                 font-weight: bold
                 text-shadow: 0px 1px 0px rgba(255,255,255, 0.6)
                 &:hover
-                    background: #f2f2f2
-                    color: #bbb
+                    background: rgba(255,255,255, 0.3)
+                    color: #aaa
 .main_controls
     height: 64px
     ul li
